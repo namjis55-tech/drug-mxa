@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="disclaimer" data-key="disclaimer"></div>
     <div class="top-bar">
         <div class="lang-switcher">
             <button class="lang-btn" data-lang="en">EN</button>
@@ -67,16 +68,47 @@
         <a href="supplements.html" class="back-btn" data-key="backButton">Back to list</a>
         <h1 data-key="vitaminBComplexTitle">Vitamin B Complex</h1>
         <div class="content">
-            <p><strong>B1 (티아민):</strong> 탄수화물 대사와 에너지 생성.</p>
-            <p><strong>B2 (리보플라빈):</strong> 에너지 생성, 세포 성장, 구내염 예방.</p>
-            <p><strong>B3 (나이아신):</strong> 에너지 대사, 피부 건강, 신경 기능 유지.</p>
-            <p><strong>B5 (판토텐산):</strong> 에너지 생성, 호르몬 합성.</p>
-            <p><strong>B6 (피리독신):</strong> 단백질 대사, 신경 전달 물질 생성, 기분 조절.</p>
-            <p><strong>B7 (비오틴):</strong> 모발, 피부, 손톱 건강.</p>
-            <p><strong>B9 (엽산):</strong> 세포 분열과 성장, DNA 합성, 임신 초기 기형아 출산 위험 감소.</p>
-            <p><strong>B12 (코발라민):</strong> 신경계 기능, 적혈구 생성. 주로 동물성 식품에 있어 채식주의자에게 필수.</p>
-            <h2 data-key="vitaminBComplexWhoNeedsTitle">누구에게 필요한가?</h2>
-            <p data-key="vitaminBComplexWhoNeeds">만성 피로를 느끼는 사람, 스트레스가 많은 직장인, 임산부(특히 엽산), 채식주의자(B12).</p>
+            <p data-key="vitaminBIntro">아래 모든 수치는 성인 기준이며, 체중과 관계없이 이 양을 넘지 않도록 합니다.</p>
+            
+            <h3 data-key="b1Title">B1 (티아민)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b1Pros">에너지 대사의 핵심. 만성 피로, 신경계 기능 저하 시 필요.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b1Cons">독성이 매우 낮아 거의 보고되지 않음.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b1Upper">미설정</span></p>
+
+            <h3 data-key="b2Title">B2 (리보플라빈)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b2Pros">에너지 생성, 구내염 예방. 피부와 점막 건강 유지.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b2Cons">소변이 형광색으로 변하나 무해함. 독성 낮음.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b2Upper">미설정</span></p>
+
+            <h3 data-key="b3Title">B3 (나이아신)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b3Pros">에너지 대사, 혈중 콜레스테롤 개선, 피부 건강.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b3Cons">나이아신 플러시 (피부 홍조, 화끈거림), 위장 장애.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b3Upper">35 mg (니코틴산 형태)</span></p>
+
+            <h3 data-key="b5Title">B5 (판토텐산)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b5Pros">스트레스 완화, 에너지 생성, 피부와 모발 건강.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b5Cons">독성이 매우 낮아 거의 보고되지 않음.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b5Upper">미설정</span></p>
+
+            <h3 data-key="b6Title">B6 (피리독신)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b6Pros">단백질 대사, 신경전달물질(세로토닌) 생성, 여성 건강.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b6Cons">장기간 과다 섭취 시 신경 손상 (손발 저림) 위험.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b6Upper">100 mg</span></p>
+
+            <h3 data-key="b7Title">B7 (비오틴)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b7Pros">모발, 피부, 손톱 건강 유지에 필수적.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b7Cons">독성 낮음. (단, 일부 혈액 검사 결과에 영향 가능)</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b7Upper">미설정</span></p>
+
+            <h3 data-key="b9Title">B9 (엽산)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b9Pros">세포 분열/성장, DNA 합성. 임산부 기형아 예방 필수.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b9Cons">B12 결핍을 가려 신경 손상을 악화시킬 수 있음.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b9Upper">1,000 mcg (합성 엽산)</span></p>
+
+            <h3 data-key="b12Title">B12 (코발라민)</h3>
+            <p><strong>👍 장점:</strong> <span data-key="b12Pros">적혈구 생성, 신경계 기능 유지. 채식주의자에게 필수.</span></p>
+            <p><strong>👎 단점:</strong> <span data-key="b12Cons">독성이 매우 낮아 거의 보고되지 않음.</span></p>
+            <p><strong>⚖️ 상한 섭취량:</strong> <span data-key="b12Upper">미설정</span></p>
         </div>
     </div>
     <script src="main.js"></script>

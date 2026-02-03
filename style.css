@@ -51,9 +51,19 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.disclaimer {
+    background-color: var(--result-bg);
+    color: var(--secondary-text-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .top-bar {
     position: absolute;
-    top: 20px;
+    top: 40px; /* Adjusted for disclaimer */
     right: 20px;
     display: flex;
     gap: 10px;

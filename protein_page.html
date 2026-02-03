@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="disclaimer" data-key="disclaimer"></div>
     <div class="top-bar">
         <div class="lang-switcher">
             <button class="lang-btn" data-lang="en">EN</button>
@@ -67,10 +68,32 @@
         <a href="supplements.html" class="back-btn" data-key="backButton">Back to list</a>
         <h1 data-key="proteinTitle">Protein/Amino Acids</h1>
         <div class="content">
-            <h2 data-key="proteinFunctionsTitle">주요 기능</h2>
-            <p data-key="proteinFunctions">근육, 피부, 모발 등 신체 조직 구성, 효소 및 호르몬 생성.</p>
-            <h2 data-key="proteinWhoNeedsTitle">누구에게 필요한가?</h2>
-            <p data-key="proteinWhoNeeds">근력 운동을 하는 사람(유청/카제인), 근육량이 감소하는 노년층, 채식주의자(식물성 단백질).</p>
+            <h2 data-key="proteinClassificationTitle">분류: 필수 영양소</h2>
+            <h3 data-key="proteinSubtypesTitle">세분화</h3>
+            <p data-key="proteinSubtypes">유청 단백질(Whey), 카제인(Casein), BCAA(분지사슬아미노산) 등</p>
+
+            <h3 data-key="proteinProsTitle">👍 장점 (기능 및 필요 대상)</h3>
+            <ul data-key="proteinPros">
+                <li>근육, 피부, 모발 등 신체 조직의 구성 성분.</li>
+                <li>효소와 호르몬 생성에 필수적.</li>
+                <li>근육량 증가나 유지를 원하는 사람, 운동 후 회복이 필요한 사람.</li>
+                <li>식사로 단백질 섭취가 부족한 노년층 또는 채식주의자.</li>
+            </ul>
+
+            <h3 data-key="proteinConsTitle">👎 단점 (과다 섭취 부작용 및 주의사항)</h3>
+            <ul data-key="proteinCons">
+                <li><strong>신장 부담:</strong> 과도한 단백질은 분해 과정에서 신장에 부담을 줄 수 있음. (특히 신장 질환자 주의)</li>
+                <li><strong>소화 불량:</strong> 한 번에 너무 많은 양을 섭취 시 가스, 복부 팽만감 유발 가능.</li>
+            </ul>
+
+            <h3 data-key="proteinDosageTitle">⚖️ 섭취량 가이드 (체중 계산식)</h3>
+            <p data-key="proteinDosageIntro">총 단백질 (음식 포함):</p>
+            <ul data-key="proteinDosageGuide">
+                <li><strong>일반 성인:</strong> 체중(kg) × 0.8g ~ 1.0g</li>
+                <li><strong>활동적 성인:</strong> 체중(kg) × 1.2g ~ 1.6g</li>
+                <li><strong>근육 증가 목표:</strong> 체중(kg) × 1.6g ~ 2.0g</li>
+            </ul>
+            <p data-key="proteinDosageUpper"><strong>상한선:</strong> 일반적으로 체중 1kg당 2.0g을 초과하지 않도록 권장.</p>
         </div>
     </div>
     <script src="main.js"></script>
