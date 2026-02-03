@@ -70,7 +70,8 @@ body {
     box-shadow: 0 2px 5px var(--shadow-color);
 }
 
-.calculator-container {
+
+.calculator-container, .container {
     background: var(--container-bg);
     padding: 40px;
     border-radius: 20px;
@@ -82,12 +83,35 @@ body {
     transition: background-color 0.3s;
 }
 
+.supplement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.supplement-item {
+    background-color: var(--result-bg);
+    color: var(--result-text-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.supplement-item:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-text-color);
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 10px;
     color: var(--text-color);
 }
+
 
 p {
     color: var(--secondary-text-color);
