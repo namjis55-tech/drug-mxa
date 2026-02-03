@@ -164,8 +164,9 @@ p {
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased margin for better spacing */
     text-align: left;
+    position: relative; /* For potential icons or enhanced styling */
 }
 
 .input-group label {
@@ -173,23 +174,52 @@ p {
     margin-bottom: 8px;
     font-weight: 600;
     color: var(--label-color);
+    font-size: 0.95rem; /* Slightly smaller label */
 }
 
 .input-group input[type="number"] {
     width: 100%;
-    padding: 12px;
+    padding: 14px 15px; /* Increased padding */
     border: 1px solid var(--input-border-color);
-    background-color: var(--bg-color);
+    background-color: var(--container-bg); /* Use container background for input */
     color: var(--text-color);
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 10px; /* More rounded corners */
+    font-size: 1.05rem; /* Slightly larger text */
     box-sizing: border-box;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
 }
 
 .input-group input[type="number"]:focus {
     outline: none;
     border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Focus ring effect */
+}
+
+/* Styles for content on detail pages */
+.content {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px 20px;
+    background-color: var(--container-bg);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--input-border-color);
+    padding-bottom: 5px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
 }
 
 .gender-options {
