@@ -1,0 +1,39 @@
+
+{
+    "en": {
+        "title": "Supplement Dose Calculator",
+        "h1": "Supplement Calculator",
+        "p": "Calculate the recommended maximum daily dosage.",
+        "weightLabel": "Weight (kg)",
+        "heightLabel": "Height (cm)",
+        "genderLabel": "Gender",
+        "maleLabel": "Male",
+        "femaleLabel": "Female",
+        "nextButton": "Next",
+        "selectSupplementTitle": "Select a Supplement",
+        "vitaminCLink": "Vitamin C",
+        "proteinLink": "Protein",
+        "vitaminCTitle": "Vitamin C Dosage",
+        "vitaminCParagraph": "Details about Vitamin C dosage will be here.",
+        "proteinTitle": "Protein Dosage",
+        "proteinParagraph": "Details about Protein dosage will be here."
+    },
+    "ko": {
+        "title": "영양제 복용량 계산기",
+        "h1": "영양제 계산기",
+        "p": "권장되는 일일 최대 복용량을 계산하세요.",
+        "weightLabel": "체중 (kg)",
+        "heightLabel": "신장 (cm)",
+        "genderLabel": "성별",
+        "maleLabel": "남성",
+        "femaleLabel": "여성",
+        "nextButton": "다음",
+        "selectSupplementTitle": "영양제 선택",
+        "vitaminCLink": "비타민 C",
+        "proteinLink": "단백질",
+        "vitaminCTitle": "비타민 C 복용량",
+        "vitaminCParagraph": "비타민 C 복용량에 대한 자세한 내용이 여기에 표시됩니다.",
+        "proteinTitle": "단백질 복용량",
+        "proteinParagraph": "단백질 복용량에 대한 자세한 내용이 여기에 표시됩니다."
+    }
+}

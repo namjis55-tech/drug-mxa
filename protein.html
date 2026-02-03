@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protein</title>
+    <title data-key="proteinTitle">Protein</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Protein Dosage</h1>
-        <p>Details about Protein dosage will be here.</p>
+    <div class="top-bar">
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ko">KO</button>
+        </div>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon" style="display: none;">🌙</span>
+            </button>
+        </div>
     </div>
+    <div class="container">
+        <h1 data-key="proteinTitle">Protein Dosage</h1>
+        <p data-key="proteinParagraph">Details about Protein dosage will be here.</p>
+    </div>
+    <script src="main.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>

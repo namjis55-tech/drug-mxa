@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitamin C</title>
+    <title data-key="vitaminCTitle">Vitamin C</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Vitamin C Dosage</h1>
-        <p>Details about Vitamin C dosage will be here.</p>
+    <div class="top-bar">
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ko">KO</button>
+        </div>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon" style="display: none;">🌙</span>
+            </button>
+        </div>
     </div>
+    <div class="container">
+        <h1 data-key="vitaminCTitle">Vitamin C Dosage</h1>
+        <p data-key="vitaminCParagraph">Details about Vitamin C dosage will be here.</p>
+    </div>
+    <script src="main.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>

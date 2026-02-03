@@ -4,45 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplement Dose Calculator</title>
+    <title data-key="title">Supplement Dose Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
 </head>
 <body>
-    <div class="theme-toggle-container">
-        <button id="theme-toggle" class="theme-toggle-btn">
-            <span class="sun-icon">☀️</span>
-            <span class="moon-icon" style="display: none;">🌙</span>
-        </button>
+    <div class="top-bar">
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ko">KO</button>
+        </div>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon" style="display: none;">🌙</span>
+            </button>
+        </div>
     </div>
     <div class="calculator-container">
-        <h1>Supplement Calculator</h1>
-        <p>Calculate the recommended maximum daily dosage.</p>
+        <h1 data-key="h1">Supplement Calculator</h1>
+        <p data-key="p">Calculate the recommended maximum daily dosage.</p>
         <form id="calculator-form">
             <div class="input-group">
-                <label for="weight">Weight (kg)</label>
+                <label for="weight" data-key="weightLabel">Weight (kg)</label>
                 <input type="number" id="weight" required>
             </div>
             <div class="input-group">
-                <label for="height">Height (cm)</label>
+                <label for="height" data-key="heightLabel">Height (cm)</label>
                 <input type="number" id="height" required>
             </div>
             <div class="input-group">
-                <label>Gender</label>
+                <label data-key="genderLabel">Gender</label>
                 <div class="gender-options">
                     <div class="gender-option">
                         <input type="radio" id="male" name="gender" value="male" checked>
-                        <label for="male">Male</label>
+                        <label for="male" data-key="maleLabel">Male</label>
                     </div>
                     <div class="gender-option">
                         <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+                        <label for="female" data-key="femaleLabel">Female</label>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="calculate-btn">Next</button>
+            <button type="submit" class="calculate-btn" data-key="nextButton">Next</button>
         </form>
     </div>
     <script src="main.js"></script>
+    <script src="language.js"></script>
 </body>
 </html>
