@@ -3,6 +3,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('calculator-form');
     const resultDiv = document.getElementById('result');
     const dosageValueSpan = document.getElementById('dosage-value');
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+
+    // Function to apply theme
+    const applyTheme = (theme) => {
+        document.body.dataset.theme = theme;
+        if (theme === 'dark') {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline';
+        } else {
+            sunIcon.style.display = 'inline';
+            moonIcon.style.display = 'none';
+        }
+    };
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    // Theme toggle event listener
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.body.dataset.theme || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
